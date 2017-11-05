@@ -707,7 +707,7 @@ body {
 }
 
 #wrapper .section.section-main .section-inner {
-	background: url('../img/bg_sec_01.jpg') no-repeat center center scroll transparent;
+	background: url('../img/main-bg.jpg') no-repeat center center scroll transparent;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -716,7 +716,7 @@ body {
 }
 
 #wrapper .section.section-thumbs .section-inner {
-	background: url('../img/bg_sec_03.jpg') no-repeat center center scroll transparent;
+	background: url('../img/bg_sec_mat.jpg') no-repeat center center scroll transparent;
 	background-size: cover;
 	overflow: hidden;
 }
