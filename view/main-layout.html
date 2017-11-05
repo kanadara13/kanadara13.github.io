@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+	<script type="text/javascript" src="/resources/js/main-no-event.js"></script>
+</head>
+<body>
+<div id="header">
+		<h1 class="header-logo">
+			<a href="/"><img src="/resources/img/logo.png" alt="logo" /></a>
+		</h1>
+		<div class="header-menu">
+			<span class="gnb-menu">
+				<a href="/about/intro">
+					<span>About</span>
+				</a>
+				<span class="gnb-sub">
+					<a href="/about/intro" class="gnb-sub-menu">캠프통 소개</a>
+					<a href="#" class="gnb-sub-menu">건축가 소개</a>
+					<a href="/about/land" class="gnb-sub-menu">Landscape</a>
+					<a href="/about/location" class="gnb-sub-menu">Location</a>
+				</span>
+			</span>
+			<span class="gnb-menu">
+				<a href="/room"><span>Room</span></a>
+				<span class="gnb-sub">
+					<a href="/room/room1" class="gnb-sub-menu">바위꽃</a>
+					<a href="/room/room2" class="gnb-sub-menu">나뭇잎</a>
+					<a href="/room/room3" class="gnb-sub-menu">물방울</a>
+				</span>
+			</span>
+			<span class="gnb-menu">
+				<a href="/facilities">Facilities</a>
+				<span class="gnb-sub">
+					<a href="/facilities/facil1" class="gnb-sub-menu">카페</a>
+					<a href="/facilities/facil2" class="gnb-sub-menu">바베큐</a>
+					<a href="/facilities/facil3" class="gnb-sub-menu">둘레길</a>
+					<a href="/facilities/facil4" class="gnb-sub-menu">파티선</a>
+				</span>
+			</span>
+			<span class="gnb-menu"><a href="/act">Activities</a></span>
+			<span class="gnb-menu"><a href="/museum">Art Museum</a></span>
+		</div>
+</div>
+
+<div id="wrapper">
+		<div class="section section-main">
+			<div class="section-inner">
+				<img class="section-mat" src="/resources/img/bg_sec_mat.png"
+					alt="독특한 여행의 시작, Camptong Island, 새로운 놀이 숙박 공간 캠프통" /> <img
+					class="section-arrow" src="/resources/img/bg_arrow_down.png"
+					alt="스크롤을 내려주세요" />
+				<div class="section-btn-group">
+					<a href="/room" class="btn">Room</a> <a href="/reservation" class="btn">Reservation</a>
+				</div>
+			</div>
+		</div>
+		<div class="section section-main-event">
+			 <div class="section-inner">
+				<div id="main-visual" class="owl-carousel owl-theme section-visual">
+				 		<div class="item" onclick="goPageView('${mainEventInfo.URL}')"; style="background-image: url('/front/view/${mainEventInfo.FILE_NAME}');"></div>
+				</div> 
+			</div>
+		</div>
+		<div class="section section-thumbs">
+			<div class="section-inner">
+				<div class="section-overlay"></div>
+				<h2>
+					<img src="/resources/img/bg_sec_03_tit.png" alt="Camptong Island" />
+				</h2>
+				<div class="section-desc">
+					함께 먹고 놀고 즐길 수 있는 문화공간,<br /> 캠프통 아일랜드는 사람들간의 유대와 소통문화를 지향합니다.
+				</div>
+				<div class="section-thumb-wrapper">
+					<div class="thumb-item thumb-item-01">
+						<div class="thumb-inner"></div>
+						<p>
+							<img src="/resources/img/bg_sec_thumb_txt_01.png" alt="" onclick="goPageView('/room')"/>
+						</p>
+					</div>
+					<div class="thumb-item thumb-item-02">
+						<div class="thumb-inner"></div>
+						<p>
+							<img src="/resources/img/bg_sec_thumb_txt_02.png" alt=""  onclick="goPageView('/facilities/facil4')"/>
+						</p>
+					</div>
+					<div class="thumb-item thumb-item-03">
+						<div class="thumb-inner"></div>
+						<p>
+							<img src="/resources/img/bg_sec_thumb_txt_03.png" alt=""   onclick="goPageView('/facilities/facil2')"/>
+						</p>
+					</div>
+					<div class="thumb-item thumb-item-04">
+						<div class="thumb-inner"></div>
+						<p>
+							<img src="/resources/img/bg_sec_thumb_txt_04.png" alt=""  onclick="goPageView('/act')"/>
+						</p>
+					</div>
+					<div class="thumb-item thumb-item-05">
+						<div class="thumb-inner"></div>
+						<p>
+							<img src="/resources/img/bg_sec_thumb_txt_05.png" alt=""  onclick="goPageView('/facilities')"/>
+						</p>
+					</div>
+					<div class="thumb-item thumb-item-06">
+						<div class="thumb-inner"></div>
+						<p>
+							<img src="/resources/img/bg_sec_thumb_txt_06.png" alt="" onclick="goPageView('/museum')"/>
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="section section-movies">
+			<div class="section-inner">
+				<div class="section-top">
+					  <div class="section-top-inner">
+						<!--<div style="width:100%;height:500px;overflow:hidden;position:absolute;top:0px;">
+									<video id="video-play" class="video-play-common" preload="metadata" muted src="/front/view/${videoInfo.FILE_NAME}" style="display:none;">
+										Sorry, your browser does not support HTML5 video.
+									</video>
+						</div>-->
+						<div class="section-top-title-line">
+							<h2>
+								<img src="/resources/img/bg_sec_04_tit.png" alt="Special">
+							</h2>
+							<h4>즐거움이 가득한 캠프통의 공연, 이벤트 소식을 확인해보세요.</h4>
+						</div>
+					</div>
+				</div>
+				<div class="section-thumb-movies">
+						 	<!-- thumb-movie-01 -->
+						<div class="thumb-movie" onclick="goPageView('${spInfo.URL}')" style="background-image: url('/front/view/${spInfo.FILE_NAME}');" >
+							<a href="${spInfo.URL}"><span>${spInfo.TEXT}</span></a>
+						</div>
+							<div class="thumb-movie">
+									<video id="video-sp-play-${spInfo.IMAGE_DEST}" class="video-play" preload="metadata"  src="/front/view/${spInfo.FILE_NAME}">
+										Sorry, your browser does not support HTML5 video.
+									</video>
+									<a href="#none" onclick="bottomVideoPlay('/front/view/${spInfo.FILE_NAME}');"><img src="/resources/img/btn_movie_play.png" alt="play"/></a>
+							</div>
+						<div class="thumb-movie thumb-movie-01">
+							<span>Drink</span>
+						</div>
+						<div class="thumb-movie thumb-movie-02">
+							<span>Fun</span>
+						</div>
+						<div class="thumb-movie thumb-movie-03">
+							<a href="#none" onclick="bottomVideoPlay();"><img src="/resources/img/btn_movie_play.png" alt="" /></a>
+						</div>
+						<div class="thumb-movie thumb-movie-04">
+							<span>Activities</span>
+						</div>
+						<div class="thumb-movie thumb-movie-05">
+							<span>BBQ</span>
+						</div>
+				</div>
+			</div>
+		</div>
+		
+		 <div class="section section-footer">
+					<div class="section-inner section-inner-small">
+						<div id="footer-map">
+							<img src="/resources/img/bg_sec_map.jpg" alt="map" width="100%" height="380px"  onclick="goPageView('/about/location')" />
+						</div>
+						<div id="footer">
+							<div class="footer-top">
+								<div class="footer-inner">
+									<div class="footer-left">
+										<a href="/about/intro" class="footer-menu">회사소개</a>
+										<a href="#" class="footer-menu">개인정보보호방침</a>
+										<a href="#" class="footer-menu">이메일무단수집거부</a>
+										<a href="/community/partner" class="footer-menu">제휴문의</a>
+										<a href="/about/location" class="footer-menu">오시는 길</a>
+									</div>
+									<div class="footer-right">
+										<a href="#" class="footer-menu footer-icon footer-line"><img src="/resources/img/btn_blog.png" alt="블로그 페이지로 이동" /></a>
+										<a href="#" class="footer-menu footer-icon"><img src="/resources/img/btn_facebook.png" alt="페이스북 페이지로 이동" /></a>
+									</div>
+								</div>
+							</div>
+						<div class="footer-bottom">
+								<div class="footer-inner">
+									<div class="footer-left">
+										(주)캠프통     서울시 강남구 역삼동 719-1 나래빌딩 6F<br />
+										대표이사 : 박동희     대표번호 : 02-1661-1063     사업자등록번호 : 220-87-96800<br />
+										Copyright © Camptong. All Rights Reserved.<br />
+									</div>
+									<div class="footer-right">
+										<a href="/reservation" class="btn-reservation">Reservation</a>
+									</div>
+								</div>
+						</div>
+				 </div>
+			 </div>
+		</div>
+ </div>
+ <div id="modal_pop" style="display:none;">
+ 	<div id="modal_content">
+ 	
+ 	</div>
+ </div>
+<script type="text/javascript"> 
+/*$(document).ready(function() {
+	$('video#video-play').on('ended',function(){
+		$(".section-top-content").show();
+	});
+});*/
+</script>
+</body>
+</html>
