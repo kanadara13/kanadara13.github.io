@@ -707,7 +707,7 @@ body {
 }
 
 #wrapper .section.section-main .section-inner {
-	background: url('../img/star.jpg') no-repeat center center scroll transparent;
+	background: url('../img/bg_sec_01.jpg') no-repeat center center scroll transparent;
 	background-size: cover;
 	background-attachment: fixed;
 }
